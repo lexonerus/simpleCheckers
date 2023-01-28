@@ -20,6 +20,17 @@ This is a simple checkers game that can be played in the command line interface 
 7. The game will continue until one player wins, or you can stop the game and quit any time.
 8. The game will print the board after each move, and it's the player's responsibility to keep track of the game status.
 
+### PieceType
+PieceType is an enumeration (enum) that represents the two possible types of pieces in the game: `normal` and `king`.
+It happens when piece reaches the opposite end of the board. The opposite end of the board is the last row on the board for the opposing player's pieces. For example, if the piece is a red piece, it will be promoted to a king when it reaches the 8th row of the board. Similarly, if the piece is a black piece, it will be promoted to a king when it reaches the 1st row of the board.
+
+This can be implemented using an if statement inside the move function, where it will check if the piece is on the opposite end of the board, and if so, it will change its type to .king.
+
+Normal pieces are the standard pieces that can only move forward and capture other pieces diagonally.
+king pieces are the promoted pieces that can move in any direction and capture other pieces diagonally in any direction.
+
+This code allows to add new types of pieces or rules to the game in the future easily. Additionally, this makes the code more readable and maintainable by giving the developer a clear understanding of the different types of pieces in the game.
+
 It's a simple game and it's easy to learn the rules, but it could be a bit tricky to master. Remember to have fun while playing!
 You are always free to improve the game as you see fit, such as adding score tracking.
 
@@ -34,6 +45,17 @@ You are always free to improve the game as you see fit, such as adding score tra
 6. Затем игра проверит правильность хода, и если ок, то обновит доску и переключится на ход следующего игрока. Если ход недействителен, игроку будет предложено ввести новый ход.
 7. Игра будет продолжаться до тех пор, пока один из игроков не выиграет, или вы можете остановить игру и выйти в любой момент.
 8. Игра будет обноалять доску после каждого хода, и игрок несет ответственность за отслеживание статуса игры. 
+
+### Тип шашки
+PieceType — это перечисление (enum), представляющее два возможных типа шашки в игре: «обычный» и «король».
+Это происходит, когда фигура достигает противоположного конца доски. Противоположный конец доски - это последний ряд на доске для фигур противника. Например, если фигура красная, она превратится в короля, когда достигнет 8-го ряда доски. Точно так же, если фигура черная, она будет превращена в короля, когда достигнет 1-го ряда доски.
+
+Это можно реализовать с помощью оператора if внутри функции перемещения, где она проверяет, находится ли фигура на противоположном конце доски, и если да, то меняет ее тип на .king.
+
+Обычные фигуры — это стандартные фигуры, которые могут двигаться только вперед и бить другие фигуры по диагонали.
+Королевские фигуры - это продвинутые фигуры, которые могут двигаться в любом направлении и захватывать другие фигуры по диагонали в любом направлении.
+
+Этот код позволяет легко добавлять новые типы фигур или правил в игру в будущем. Кроме того, это делает код более читабельным и удобным для сопровождения, давая разработчику четкое представление о различных типах элементов в игре.
 
 Это простая игра, и в ней легко выучить правила, но может быть немного сложно освоить ее. Не забывайте получать удовольствие во время игры!
 Вы всегда вольны усовершенстовать игру на ваше усмотрение, например добавить отслеживание счета.
