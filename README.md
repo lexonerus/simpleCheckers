@@ -29,6 +29,7 @@ This can be implemented using an if statement inside the move function, where it
 Normal pieces are the standard pieces that can only move forward and capture other pieces diagonally.
 king pieces are the promoted pieces that can move in any direction and capture other pieces diagonally in any direction.
 
+### Summary
 This code allows to add new types of pieces or rules to the game in the future easily. Additionally, this makes the code more readable and maintainable by giving the developer a clear understanding of the different types of pieces in the game.
 
 It's a simple game and it's easy to learn the rules, but it could be a bit tricky to master. Remember to have fun while playing!
@@ -55,6 +56,7 @@ PieceType — это перечисление (enum), представляюще
 Обычные фигуры — это стандартные фигуры, которые могут двигаться только вперед и бить другие фигуры по диагонали.
 Королевские фигуры - это продвинутые фигуры, которые могут двигаться в любом направлении и захватывать другие фигуры по диагонали в любом направлении.
 
+### Звключение
 Этот код позволяет легко добавлять новые типы фигур или правил в игру в будущем. Кроме того, это делает код более читабельным и удобным для сопровождения, давая разработчику четкое представление о различных типах элементов в игре.
 
 Это простая игра, и в ней легко выучить правила, но может быть немного сложно освоить ее. Не забывайте получать удовольствие во время игры!
